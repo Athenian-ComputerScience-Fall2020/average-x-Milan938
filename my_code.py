@@ -3,14 +3,16 @@
 
 def avg(user_list):
     # Insert code here
+    average = sum(user_list) / len(user_list)
     return average
 
 
 if __name__ == '__main__':
     # test your fucntion with this print statement before writing the input loop
-    print(avg([x, y, z]))    # Put the values you want to test in for x,y and z
+    print(avg([8, 9, 6]))    # Put the values you want to test in for x,y and z
 
     # Now, comment out the print statement and work on the code below
     # Remember to indent in this section
     user_list = [] # start with an empty list
     # Write a loop to allow the user to input the values to be averaged
+
