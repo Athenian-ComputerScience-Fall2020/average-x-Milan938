@@ -23,4 +23,4 @@ if __name__ == '__main__':
         num = int(num)
         user_list.append(num)
 
-print(avg(user_list))
+    print(avg(user_list))
