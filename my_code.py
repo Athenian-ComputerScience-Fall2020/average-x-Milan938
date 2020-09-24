@@ -9,15 +9,18 @@ def avg(user_list):
 
 if __name__ == '__main__':
   
-    x = int(input("Enter a number: "))
-    y = int(input("Enter another number: "))
-    z = int(input("One more number: ")) 
-  
-  
-    # test your fucntion with this print statement before writing the input loop
-    print(avg([x, y, z]))    # Put the values you want to test in for x,y and z
+    # Put the values you want to test in for x,y and z
 
     # Now, comment out the print statement and work on the code below
     # Remember to indent in this section
     user_list = [] # start with an empty list
-    # Write a loop to allow the user to input the values to be averaged
+
+    num = 0
+    while num != "done":
+        num = input("Enter a number to be averaged, if done type 'done' ")
+        if num == "done":
+            break
+        num = int(num)
+        user_list.append(num)
+
+print(avg(user_list))
